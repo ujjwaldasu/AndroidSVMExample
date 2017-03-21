@@ -1,0 +1,17 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "25.0.0"
+
+    defaultConfig {
+        applicationId "info.kunli.androidlibsvmexample"
+        minSdkVersion 18
+        targetSdkVersion 23
+
+        ndk {
+            moduleName "signal"
+            ldLibs "log"
+        }
+    }
+}
